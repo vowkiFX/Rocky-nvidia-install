@@ -3,9 +3,6 @@ sudo dnf install "alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc lib
 sudo dnf groupinstall "Server with GUI"
 systemctl set-default graphical
 sudo dnf install gnome-tweaks
-sudo subscription-manager repos --enable "codeready-builder-for-rhel-8-$(uname -m)-rpms
-sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-sudo yum install epel-release
 
 echo "$APP_NAME has been installed, and the system has been updated. Press Enter to reboot into your system..."
 read
