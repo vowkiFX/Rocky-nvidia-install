@@ -2,11 +2,6 @@
 
 APP_NAME="epel-release and Official NVIDIA repo"
 
-echo -e "\033[0;32m====================================="
-echo -e "\033[1;32mThe Linux IT Guy - Rocky Linux 9.4 Pre-Install NVIDIA Script"
-echo -e "\033[1;32mInstalling $APP_NAME"
-echo -e "\033[0;32m=====================================\033[0m"
-
 # https://forums.rockylinux.org/t/nvidia-drivers-on-rocky-linux/12366
 # rpmfusion-free-release and epel-release are part of extras
 sudo dnf install epel-release -y
