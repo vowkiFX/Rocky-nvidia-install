@@ -9,7 +9,7 @@ APP_NAME="X11"
 
 # Update
 sudo dnf update -y
-
+sudo dnf upgrade -y
 # X11
 sudo dnf install xorg-x11-server-Xorg xorg-x11-xauth -y
 
