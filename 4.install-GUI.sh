@@ -3,7 +3,6 @@ sudo dnf install alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc liba
 
 sudo dnf groupinstall "Minimal"
 systemctl set-default graphical
-sudo dnf groupinstall "Development Tools"
 sudo dnf install gnome-tweaks
 sudo dnf install flatpak
 flatpak install flathub io.missioncenter.MissionCenter
