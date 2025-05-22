@@ -6,5 +6,7 @@ systemctl set-default graphical
 sudo dnf groupinstall "Development Tools"
 sudo dnf install gnome-tweaks
 sudo dnf install flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub io.missioncenter.MissionCenter
+flatpak install flathub net.nokyan.Resources
+flatpak install flathub com.valvesoftware.Steam
 sudo reboot
