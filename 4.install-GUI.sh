@@ -4,6 +4,7 @@ sudo dnf install alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc liba
 sudo dnf groupinstall "KDE Plasma Workspaces" -y
 sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze mpv  -y
 systemctl set-default graphical
+sudo systemctl enable sddm
 
 sudo dnf install flatpak
 flatpak install flathub io.missioncenter.MissionCenter
