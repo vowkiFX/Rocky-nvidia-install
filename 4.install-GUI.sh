@@ -9,6 +9,8 @@ sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discove
 sudo systemctl set-default graphical.target
 sudo systemctl enable sddm
 
+sudo dnf groupinstall "Hardware Support" -y
+
 sudo hostnamectl set-hostname new-hostname
 sudo hostnamectl set-hostname vowkifx
 
