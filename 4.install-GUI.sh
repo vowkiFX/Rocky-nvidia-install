@@ -10,7 +10,7 @@ sudo systemctl set-default graphical.target
 sudo systemctl enable sddm
 
 sudo dnf install flatpak
-https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub io.missioncenter.MissionCenter
 flatpak install flathub de.z_ray.OptimusUI
 flatpak install flathub com.valvesoftware.Steam
