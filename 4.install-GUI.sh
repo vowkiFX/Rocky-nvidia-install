@@ -5,7 +5,7 @@ sudo dnf config-manager --set-enabled crb
 sudo dnf -y update
 
 sudo dnf groupinstall "Server with GUI" -y
-sudo dnf install vlc -y
+sudo dnf install gnome-tweaks vlc -y
 sudo systemctl set-default graphical.target
 
 
