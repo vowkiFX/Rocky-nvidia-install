@@ -6,10 +6,9 @@ sudo dnf -y update
 
 sudo dnf groupinstall "KDE Plasma Workspaces" -y
 sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
+sudo dnf groupinstall "Hardware Support" -y
 sudo systemctl set-default graphical.target
 sudo systemctl enable sddm
-
-sudo dnf groupinstall "Hardware Support" -y
 
 sudo hostnamectl set-hostname new-hostname
 sudo hostnamectl set-hostname vowkifx
