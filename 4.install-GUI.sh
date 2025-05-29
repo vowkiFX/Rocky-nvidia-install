@@ -4,15 +4,18 @@ sudo dnf -y install epel-release
 sudo dnf config-manager --set-enabled crb
 sudo dnf -y update
 
-sudo dnf groupinstall "Server with GUI" -y
-sudo dnf install gnome-tweaks vlc -y
+sudo dnf groupinstall "KDE Plasma Workspaces" -y
+sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
 sudo systemctl set-default graphical.target
+sudo systemctl enable sddm
+
+sudo hostnamectl set-hostname new-hostname
+sudo hostnamectl set-hostname vowkifx
 
 
 sudo dnf install flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub io.missioncenter.MissionCenter
 flatpak install flathub de.z_ray.OptimusUI
-flatpak install flathub it.mijorus.gearlever
 flatpak install flathub com.valvesoftware.Steam
 sudo reboot
