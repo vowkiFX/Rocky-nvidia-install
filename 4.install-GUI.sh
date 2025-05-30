@@ -21,7 +21,7 @@ sudo dnf groupinstall "Hardware Support" -y
 
 sudo systemctl enable sddm
 
-sudo dnf erase kdeconnectd kwalletmanager
+sudo dnf erase kdeconnectd kwalletmanager5
 
 
 sudo hostnamectl set-hostname new-hostname
