@@ -5,9 +5,10 @@ sudo dnf config-manager --set-enabled crb
 sudo dnf -y update
 
 
+sudo dnf install plasma-desktop sddm kde-settings
 
-sudo dnf groupinstall "KDE Plasma Workspaces" -y
-sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
+sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox plasma-workspace rocky-backgrounds sddm-breeze vlc -y
+sudo dnf install plasma-desktop --exclude=kdeconnect* --exclude=kwallet*
 sudo systemctl set-default graphical.target
 sudo dnf groupinstall "Hardware Support" -y
 sudo systemctl enable sddm
