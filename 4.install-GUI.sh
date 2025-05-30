@@ -15,7 +15,7 @@ sudo dnf groupinstall "Hardware Support" -y
 sudo systemctl enable sddm
 
 sudo hostnamectl set-hostname new-hostname
-sudo hostnamectl set-hostname vowkifx
+sudo hostnamectl set-hostname your-name
 
 
 sudo dnf install flatpak
