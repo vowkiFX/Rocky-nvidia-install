@@ -13,7 +13,7 @@ sudo dnf -y update
 
 sudo dnf groupinstall "KDE Plasma Workspaces" -y
 
-sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
+sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc root -y
 
 sudo systemctl set-default graphical.target
 
