@@ -6,7 +6,7 @@ sudo dnf -y update
 
 
 
-sudo dnf groupinstall "Plasma desktop" -y
+sudo dnf groupinstall "KDE Plasma Workspaces" -y
 sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
 sudo dnf groupinstall "Hardware Support" -y
 sudo systemctl enable sddm
