@@ -21,23 +21,20 @@ sudo dnf groupinstall "Hardware Support" -y
 
 sudo systemctl enable sddm
 
+sudo dnf erase kdeconnectd
+
 
 sudo hostnamectl set-hostname new-hostname
-
 sudo hostnamectl set-hostname vowkifx
 
 
 
 sudo dnf install flatpak
-
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 flatpak install flathub io.missioncenter.MissionCenter
-
 flatpak install flathub it.mijorus.gearlever
-
 flatpak install flathub de.z_ray.OptimusUI
-
 flatpak install flathub com.valvesoftware.Steam
 
 sudo reboot
