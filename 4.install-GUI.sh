@@ -8,9 +8,6 @@ sudo dnf config-manager --set-enabled crb
 
 sudo dnf -y update
 
-
-
-
 sudo dnf groupinstall "KDE Plasma Workspaces" -y
 
 sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
@@ -25,7 +22,7 @@ sudo dnf erase kdeconnectd
 
 
 sudo hostnamectl set-hostname new-hostname
-sudo hostnamectl set-hostname vowkifx
+sudo hostnamectl set-hostname your-name
 
 
 
