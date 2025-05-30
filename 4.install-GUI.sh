@@ -5,9 +5,11 @@ sudo dnf config-manager --set-enabled crb
 sudo dnf -y update
 
 
-sudo dnf groupinstall "Server with GUI" -y
-sudo dnf install gnome-tweaks vlc -y
-sudo systemctl set-default graphical.target
+
+sudo dnf groupinstall "Plasma desktop" -y
+sudo dnf install kscreen sddm kde-gtk-config dolphin konsole kate plasma-discover firefox rocky-backgrounds sddm-breeze vlc -y
+sudo dnf groupinstall "Hardware Support" -y
+sudo systemctl enable sddm
 
 sudo hostnamectl set-hostname new-hostname
 sudo hostnamectl set-hostname vowkifx
