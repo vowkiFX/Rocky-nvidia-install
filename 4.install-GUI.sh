@@ -34,7 +34,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 flatpak install flathub io.missioncenter.MissionCenter
 flatpak install flathub it.mijorus.gearlever
-flatpak install flathub de.z_ray.OptimusUI
 flatpak install flathub com.valvesoftware.Steam
 
 sudo reboot
