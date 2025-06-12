@@ -21,7 +21,7 @@ sudo dnf groupinstall "Hardware Support" -y
 
 sudo systemctl enable sddm
 
-sudo dnf erase kwalletmanager5
+sudo dnf erase kwalletmanager kcalc
 
 
 sudo hostnamectl set-hostname new-hostname
