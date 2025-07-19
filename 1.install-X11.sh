@@ -10,7 +10,7 @@ APP_NAME="X11"
 # Update
 sudo dnf update -y
 sudo dnf upgrade -y
-sudo dnf groupinstall "Development Tools"
+sudo dnf groupinstall -y "Development Tools"
 # X11
 sudo dnf install xorg-x11-server-Xorg xorg-x11-xauth -y
 
